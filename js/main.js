@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   effect: 'fade',
   autopay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false,
   },
 

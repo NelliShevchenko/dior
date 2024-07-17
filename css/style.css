@@ -140,4 +140,10 @@ body {
     border: 1px solid #7449BB;
     display: inline-block;
     margin-left: auto;
+    transition: all .3s ease;
+}
+
+.top-slaide__btn:hover {
+    color: #FFFFFF;
+    background-color: #7449BB;
 }
