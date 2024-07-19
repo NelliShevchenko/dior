@@ -6,8 +6,8 @@ const swiperTop = new Swiper('.top__swiper', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-top',
+    prevEl: '.swiper-button-prev-top',
   },
 
 });
@@ -15,11 +15,18 @@ const swiperTop = new Swiper('.top__swiper', {
 
 
 const swiperAbout = new Swiper(".about__slider", {
-      slidesPerView: 4,
-      spaceBetween: 20,
-      freeMode: true,
+      
+       freeMode: {
+    enabled: true,
+    sticky: true,
+  },
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  // freeMode: true,
+      // slidesPerView: "auto",
+      // spaceBetween: 30,
      navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-bottom',
+    prevEl: '.swiper-button-prev-bottom',
   },
     });
