@@ -144,7 +144,17 @@ body {
     transition: all .3s ease;
 }
 
-.top-slaide__btn:hover {
+.button {
+    color: #7449BB;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 21px 55px;
+    border: 1px solid #7449BB;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.button:hover {
     color: #FFFFFF;
     background-color: #7449BB;
 }
