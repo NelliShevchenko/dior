@@ -278,8 +278,33 @@ section.about {
     content: '';
     position: absolute;
     width: 16px;
-    height: 50px;
+    height: 51px;
     background-image: url(/image/arrow-1.svg);
     right: 85px;
     top: 50px;
+}
+
+.accordeon__triger {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordeon__triger-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    flex-basis: 300px;
+    text-align: left;
+}
+
+.accordeon__triger-text {
+    flex-basis: 387px;
+    margin-right: 104px;
+}
+
+.accordeon__content {
+    padding-top: 20px;
+}
+
+.accordeon__content {
+    margin-bottom: 10px;
 }
