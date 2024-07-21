@@ -261,3 +261,25 @@ body {
 section.about {
     margin-bottom: 150px;
 }
+
+.accordeon {}
+
+.accordeon__inner {
+    padding-left: 200px;
+}
+
+.accordeon__item {
+    border-bottom: 1px solid #000;
+    padding: 50px 101px 20px 0;
+    position: relative;
+}
+
+.accordeon__item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 50px;
+    background-image: url(/image/arrow-1.svg);
+    right: 85px;
+    top: 50px;
+}
