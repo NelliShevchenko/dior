@@ -29,4 +29,10 @@ const swiperAbout = new Swiper(".about__slider", {
     nextEl: '.swiper-button-next-bottom',
     prevEl: '.swiper-button-prev-bottom',
   },
-    });
+});
+    
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('accordeon__trigger')) {
+    event.target.parentNode.classList.toggle('accordeon__item--active');
+  }
+});
