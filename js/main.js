@@ -1,6 +1,6 @@
 const swiperTop = new Swiper('.top__swiper', {
   effect: 'fade',
-  autopay: {
+  autoplay: {
     delay: 3500,
     disableOnInteraction: false,
   },
@@ -9,23 +9,16 @@ const swiperTop = new Swiper('.top__swiper', {
     nextEl: '.swiper-button-next-top',
     prevEl: '.swiper-button-prev-top',
   },
-
 });
 
-
-
 const swiperAbout = new Swiper(".about__slider", {
-      
-       freeMode: {
+  freeMode: {
     enabled: true,
     sticky: true,
   },
   slidesPerView: "auto",
   spaceBetween: 20,
-  // freeMode: true,
-      // slidesPerView: "auto",
-      // spaceBetween: 30,
-     navigation: {
+  navigation: {
     nextEl: '.swiper-button-next-bottom',
     prevEl: '.swiper-button-prev-bottom',
   },
