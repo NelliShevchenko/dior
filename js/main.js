@@ -23,6 +23,7 @@ const swiperAbout = new Swiper(".about__slider", {
     prevEl: '.swiper-button-prev-bottom',
   },
 });
+
     
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('accordeon__trigger')) {
