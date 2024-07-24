@@ -413,3 +413,28 @@ section.about {
     justify-content: center;
     align-items: center;
 }
+
+/*-------FOOTER------*/
+
+.footer {
+    background-color: #C4A9CD;
+    padding: 66px 0 100px;
+}
+
+.footer__top {
+    display: flex;
+    margin-bottom: 70px;
+    gap: 0 70px;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-right: 10px;
+}
+
+.footer__item-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer__item-form {}
