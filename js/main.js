@@ -11,22 +11,32 @@ const swiperTop = new Swiper('.top__swiper', {
   },
 });
 
-const swiperAbout = new Swiper(".about__slider", {
-  freeMode: {
-    enabled: true,
-    sticky: true,
-  },
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.swiper-button-next-bottom',
-    prevEl: '.swiper-button-prev-bottom',
-  },
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.accordeon__item');
 
-    
-document.addEventListener('click', (event) => {
-  if (event.target.classList.contains('accordeon__trigger')) {
-    event.target.parentNode.classList.toggle('accordeon__item--active');
-  }
+  accordions.forEach(accordion => {
+    const trigger = accordion.querySelector('.accordeon__triger');
+
+    trigger.addEventListener('click', () => {
+      const content = accordion.querySelector('.accordeon__content');
+
+      // Сначала закрываем все открытые контенты
+      accordions.forEach(item => {
+        const itemContent = item.querySelector('.accordeon__content');
+        if (itemContent !== content) {
+          itemContent.style.display = 'none';
+          item.querySelector('.accordeon__triger').classList.remove('active');
+        }
+      });
+
+      // Переключаем отображение текущего контента
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        trigger.classList.remove('active');
+      } else {
+        content.style.display = 'block';
+        trigger.classList.add('active');
+      }
+    });
+  });
 });

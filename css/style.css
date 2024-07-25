@@ -485,6 +485,7 @@ section.about {
 .footer__social-list {
     margin-left: 10px;
     align-self: flex-end;
+    margin-right: 105px;
 }
 .footer__social-item + .footer__social-item {
     margin-top: 20px;
@@ -492,4 +493,46 @@ section.about {
 
 .footer__social-item svg:hover path {
     fill: #7449BB;
+}
+
+.footer__social-item svg path {
+    transition: all .3s;
+}
+
+.footer__nav {
+    display: flex;
+   justify-content: flex-end;
+   margin-right: 105px;
+}
+
+.footer__nav-list {
+    
+    display: flex;
+    gap: 0 20px;
+}
+
+@media (max-width: 992px) {
+    .header__title {
+        display: none;
+    }
+    .menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media( max-width: 420px) {
+    .header__inner {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .logo,
+    .user-nav {
+        order: -1;
+    }
+    .menu {
+        padding-top: 30px;
+        text-align: right;
+        width: 100%;
+    }
 }
