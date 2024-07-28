@@ -1,14 +1,13 @@
-const swiperTop = new Swiper('.top__swiper', {
-  effect: 'fade',
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-
+var swiper = new Swiper('.top__swiper', {
   navigation: {
     nextEl: '.swiper-button-next-top',
     prevEl: '.swiper-button-prev-top',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
 });
 
 document.addEventListener('DOMContentLoaded', () => {
